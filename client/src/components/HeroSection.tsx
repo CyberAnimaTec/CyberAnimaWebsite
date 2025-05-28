@@ -75,23 +75,23 @@ export default function HeroSection() {
 
         {/* Floating elements */}
         <motion.div
-          className="absolute top-1/4 left-10 text-4xl text-primary opacity-50"
-          animate={{ y: [-20, 20, -20] }}
-          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-1/4 left-10 text-2xl text-primary opacity-20"
+          animate={{ y: [-8, 8, -8] }}
+          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         >
           ✦
         </motion.div>
         <motion.div
-          className="absolute top-3/4 right-10 text-3xl text-accent opacity-50"
-          animate={{ y: [20, -20, 20] }}
-          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          className="absolute top-3/4 right-10 text-xl text-accent opacity-15"
+          animate={{ y: [6, -6, 6] }}
+          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 2 }}
         >
           ⚡
         </motion.div>
         <motion.div
-          className="absolute top-1/2 left-1/4 text-2xl text-yellow-400 opacity-50"
-          animate={{ y: [-15, 15, -15] }}
-          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+          className="absolute top-1/2 left-1/4 text-lg text-yellow-400 opacity-10"
+          animate={{ y: [-5, 5, -5] }}
+          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 4 }}
         >
           ✨
         </motion.div>

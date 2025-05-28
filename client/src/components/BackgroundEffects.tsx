@@ -24,26 +24,26 @@ export default function BackgroundEffects() {
   useEffect(() => {
     // Generate random stars
     const newStars: Star[] = [];
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 30; i++) {
       newStars.push({
         id: i,
         x: Math.random() * 100,
         y: Math.random() * 100,
-        size: Math.random() * 3 + 1,
-        delay: Math.random() * 3,
+        size: Math.random() * 2 + 0.5,
+        delay: Math.random() * 5,
       });
     }
     setStars(newStars);
 
     // Generate floating particles
     const newParticles: Particle[] = [];
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 8; i++) {
       newParticles.push({
         id: i,
         x: Math.random() * 100,
         y: Math.random() * 100,
-        delay: Math.random() * 10,
-        duration: 15 + Math.random() * 10,
+        delay: Math.random() * 15,
+        duration: 25 + Math.random() * 15,
       });
     }
     setParticles(newParticles);
@@ -56,30 +56,30 @@ export default function BackgroundEffects() {
 
       {/* Nebula effects */}
       <motion.div
-        className="absolute w-96 h-96 rounded-full nebula-gradient opacity-30"
+        className="absolute w-96 h-96 rounded-full nebula-gradient opacity-10"
         style={{ top: "-100px", right: "-100px" }}
         animate={{
-          scale: [1, 1.2, 1],
-          opacity: [0.3, 0.5, 0.3],
+          scale: [1, 1.05, 1],
+          opacity: [0.08, 0.15, 0.08],
         }}
         transition={{
-          duration: 8,
+          duration: 12,
           repeat: Infinity,
           ease: "easeInOut",
         }}
       />
       <motion.div
-        className="absolute w-64 h-64 rounded-full nebula-gradient opacity-20"
+        className="absolute w-64 h-64 rounded-full nebula-gradient opacity-8"
         style={{ bottom: "-50px", left: "-50px" }}
         animate={{
-          scale: [1, 1.3, 1],
-          opacity: [0.2, 0.4, 0.2],
+          scale: [1, 1.08, 1],
+          opacity: [0.05, 0.12, 0.05],
         }}
         transition={{
-          duration: 10,
+          duration: 15,
           repeat: Infinity,
           ease: "easeInOut",
-          delay: 2,
+          delay: 3,
         }}
       />
 
@@ -95,11 +95,11 @@ export default function BackgroundEffects() {
             height: `${star.size}px`,
           }}
           animate={{
-            opacity: [0.3, 1, 0.3],
-            scale: [1, 1.2, 1],
+            opacity: [0.2, 0.6, 0.2],
+            scale: [1, 1.05, 1],
           }}
           transition={{
-            duration: 3,
+            duration: 5,
             repeat: Infinity,
             ease: "easeInOut",
             delay: star.delay,
@@ -129,38 +129,21 @@ export default function BackgroundEffects() {
         />
       ))}
 
-      {/* Meteor trails */}
+      {/* Meteor trails - more subtle */}
       <motion.div
-        className="absolute w-0.5 h-16 bg-gradient-to-b from-accent to-transparent"
+        className="absolute w-0.5 h-8 bg-gradient-to-b from-accent to-transparent opacity-50"
         style={{ top: "10%", left: "-50px" }}
         animate={{
           x: ["0vw", "120vw"],
           y: ["0vh", "50vh"],
           rotate: 45,
-          opacity: [0, 1, 1, 0],
+          opacity: [0, 0.3, 0.3, 0],
         }}
         transition={{
-          duration: 8,
+          duration: 12,
           repeat: Infinity,
           ease: "linear",
-          repeatDelay: 5,
-        }}
-      />
-      <motion.div
-        className="absolute w-0.5 h-12 bg-gradient-to-b from-primary to-transparent"
-        style={{ top: "50%", left: "-50px" }}
-        animate={{
-          x: ["0vw", "120vw"],
-          y: ["0vh", "40vh"],
-          rotate: 45,
-          opacity: [0, 1, 1, 0],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "linear",
-          delay: 3,
-          repeatDelay: 8,
+          repeatDelay: 15,
         }}
       />
 
@@ -176,7 +159,7 @@ export default function BackgroundEffects() {
           backgroundPosition: ["0% 0%", "100% 100%"],
         }}
         transition={{
-          duration: 30,
+          duration: 60,
           repeat: Infinity,
           repeatType: "reverse",
           ease: "linear",

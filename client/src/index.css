@@ -3,56 +3,56 @@
 @tailwind utilities;
 
 :root {
-  --background: 210 40% 5%; /* #0B0D1A */
-  --foreground: 220 25% 95%; /* #E8E8F0 */
-  --muted: 210 40% 15%; /* #1A1A2E */
-  --muted-foreground: 220 15% 60%; /* #4A4A5A */
-  --popover: 210 40% 8%; /* #0F1218 */
-  --popover-foreground: 220 25% 95%; /* #E8E8F0 */
-  --card: 210 40% 8%; /* #0F1218 */
-  --card-foreground: 220 25% 95%; /* #E8E8F0 */
-  --border: 215 28% 17%; /* #2A2A3E */
-  --input: 215 28% 17%; /* #2A2A3E */
-  --primary: 264 83% 67%; /* #6C5CE7 */
-  --primary-foreground: 210 40% 98%; /* #FEFEFF */
-  --secondary: 215 28% 17%; /* #2A2A3E */
-  --secondary-foreground: 220 25% 95%; /* #E8E8F0 */
-  --accent: 195 100% 50%; /* #00D2FF */
-  --accent-foreground: 210 40% 8%; /* #0F1218 */
-  --destructive: 0 84% 60%; /* #F56565 */
+  --background: 210 50% 2%; /* #050608 */
+  --foreground: 220 25% 90%; /* #D8D8E0 */
+  --muted: 210 50% 8%; /* #0D0D15 */
+  --muted-foreground: 220 15% 50%; /* #3A3A4A */
+  --popover: 210 50% 4%; /* #070709 */
+  --popover-foreground: 220 25% 90%; /* #D8D8E0 */
+  --card: 210 50% 4%; /* #070709 */
+  --card-foreground: 220 25% 90%; /* #D8D8E0 */
+  --border: 215 30% 12%; /* #1A1A25 */
+  --input: 215 30% 12%; /* #1A1A25 */
+  --primary: 264 60% 55%; /* #5A4FCF */
+  --primary-foreground: 210 50% 98%; /* #FEFEFF */
+  --secondary: 215 30% 12%; /* #1A1A25 */
+  --secondary-foreground: 220 25% 90%; /* #D8D8E0 */
+  --accent: 195 70% 45%; /* #26B8DB */
+  --accent-foreground: 210 50% 4%; /* #070709 */
+  --destructive: 0 70% 50%; /* #CC4545 */
   --destructive-foreground: 0 0% 98%; /* #FAFAFA */
-  --ring: 264 83% 67%; /* #6C5CE7 */
+  --ring: 264 60% 55%; /* #5A4FCF */
   --radius: 0.5rem;
   
   /* Custom space theme colors */
-  --space-black: 210 40% 4%; /* #0B0B1A */
-  --cosmic-blue: 220 33% 17%; /* #1A1A2E */
-  --nebula-purple: 264 83% 67%; /* #6C5CE7 */
-  --stellar-cyan: 195 100% 50%; /* #00D2FF */
-  --star-white: 220 25% 95%; /* #E8E8F0 */
-  --cosmic-gray: 220 15% 60%; /* #4A4A5A */
+  --space-black: 210 60% 1%; /* #020305 */
+  --cosmic-blue: 220 40% 8%; /* #0A0A15 */
+  --nebula-purple: 264 60% 55%; /* #5A4FCF */
+  --stellar-cyan: 195 70% 45%; /* #26B8DB */
+  --star-white: 220 25% 85%; /* #C8C8D0 */
+  --cosmic-gray: 220 15% 40%; /* #2A2A3A */
 }
 
 .dark {
-  --background: 210 40% 5%; /* #0B0D1A */
-  --foreground: 220 25% 95%; /* #E8E8F0 */
-  --muted: 210 40% 15%; /* #1A1A2E */
-  --muted-foreground: 220 15% 60%; /* #4A4A5A */
-  --popover: 210 40% 8%; /* #0F1218 */
-  --popover-foreground: 220 25% 95%; /* #E8E8F0 */
-  --card: 210 40% 8%; /* #0F1218 */
-  --card-foreground: 220 25% 95%; /* #E8E8F0 */
-  --border: 215 28% 17%; /* #2A2A3E */
-  --input: 215 28% 17%; /* #2A2A3E */
-  --primary: 264 83% 67%; /* #6C5CE7 */
-  --primary-foreground: 210 40% 98%; /* #FEFEFF */
-  --secondary: 215 28% 17%; /* #2A2A3E */
-  --secondary-foreground: 220 25% 95%; /* #E8E8F0 */
-  --accent: 195 100% 50%; /* #00D2FF */
-  --accent-foreground: 210 40% 8%; /* #0F1218 */
-  --destructive: 0 84% 60%; /* #F56565 */
+  --background: 210 50% 2%; /* #050608 */
+  --foreground: 220 25% 90%; /* #D8D8E0 */
+  --muted: 210 50% 8%; /* #0D0D15 */
+  --muted-foreground: 220 15% 50%; /* #3A3A4A */
+  --popover: 210 50% 4%; /* #070709 */
+  --popover-foreground: 220 25% 90%; /* #D8D8E0 */
+  --card: 210 50% 4%; /* #070709 */
+  --card-foreground: 220 25% 90%; /* #D8D8E0 */
+  --border: 215 30% 12%; /* #1A1A25 */
+  --input: 215 30% 12%; /* #1A1A25 */
+  --primary: 264 60% 55%; /* #5A4FCF */
+  --primary-foreground: 210 50% 98%; /* #FEFEFF */
+  --secondary: 215 30% 12%; /* #1A1A25 */
+  --secondary-foreground: 220 25% 90%; /* #D8D8E0 */
+  --accent: 195 70% 45%; /* #26B8DB */
+  --accent-foreground: 210 50% 4%; /* #070709 */
+  --destructive: 0 70% 50%; /* #CC4545 */
   --destructive-foreground: 0 0% 98%; /* #FAFAFA */
-  --ring: 264 83% 67%; /* #6C5CE7 */
+  --ring: 264 60% 55%; /* #5A4FCF */
 }
 
 @layer base {
@@ -62,7 +62,7 @@
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
-    background: linear-gradient(135deg, hsl(var(--space-black)) 0%, hsl(var(--cosmic-blue)) 50%, hsl(220, 40%, 8%) 100%);
+    background: linear-gradient(135deg, hsl(var(--space-black)) 0%, hsl(var(--cosmic-blue)) 70%, hsl(220, 50%, 3%) 100%);
     min-height: 100vh;
   }
 
