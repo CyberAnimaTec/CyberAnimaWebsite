@@ -19,7 +19,7 @@ export default function HeroSection() {
         >
           <motion.div
             animate={{ rotate: 360 }}
-            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
           >
             <Globe className="text-6xl lg:text-8xl text-primary mx-auto floating-icon" />
           </motion.div>
@@ -55,7 +55,7 @@ export default function HeroSection() {
         >
           <Button
             onClick={() => scrollToSection("#featured")}
-            className="bg-primary hover:bg-primary/80 px-8 py-4 rounded-full font-semibold text-lg transition-all animate-pulse-glow"
+            className="bg-primary hover:bg-primary/80 px-8 py-4 rounded-full font-semibold text-lg transition-all"
             size="lg"
           >
             <Rocket className="mr-3 floating-icon" />

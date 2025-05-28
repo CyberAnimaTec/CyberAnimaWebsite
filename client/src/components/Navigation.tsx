@@ -32,7 +32,7 @@ export default function Navigation() {
         >
           <motion.div
             animate={{ rotate: 360 }}
-            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
           >
             <Rocket className="text-2xl text-accent floating-icon" />
           </motion.div>
