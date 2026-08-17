@@ -1,0 +1,148 @@
+:root {
+    --background: #101010;
+    --color: #ffffff;
+    font-family: "Kode Mono", monospace;
+    color-scheme: dark light;
+}
+
+:root.light {
+    --background: #ffffff;
+    --color: #000000;
+    background-color: #ffffff;
+    color: #000000;
+    color-scheme: light;
+}
+
+/* [visual-theme="light"] {
+    --background: #abc0ff;
+    --color: #000000;
+}
+
+[visual-theme="dark"] {
+    --background: #101010;
+    --color: #ffffff;
+} */
+
+@font-face {
+    font-family: "Kode Mono";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/Kode_mono/KodeMono-VariableFont_wght.ttf") format("truetype");
+}
+
+.kode-mono-body {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400 700;
+  font-style: normal;
+}
+
+html, body {
+    background-color: var(--background);
+    color: var(--color);
+    transition: background-color 0.3s, color 0.3s;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#light-theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-page-center {
+    background-color: #151515;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+:root.light .landing-page-center {
+    background-color: #f0f0f0;
+}
+
+nav {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    border: 1px solid currentColor;
+    transition: border-color 0.3s;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+nav button:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+}
+
+.center-container-art {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-container-art.hidden {
+    display: none;
+}
+
+pre {
+    font-family: inherit;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+section {
+    display: none;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+section.visible {
+    display: flex;
+}
+
+section.light, :root.light section {
+    background-color: #f0f0f0;
+}
+
+article {
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    border: 1px solid currentColor;
+    transition: border-color 0.3s;
+}

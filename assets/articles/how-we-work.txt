@@ -1,0 +1,3 @@
+This section will present the projects developed and being developed by CyberAnima. More often than not, each project will contain more detailed information in the provided link, nevertheless, updates and warnings regarding their state and/or development progress may also be added and displayed here for convenience.
+
+Worth mentioning, as (almost) any other piece of digital content, this website and it's underlying structure is a project in itself! So don't be surprised if at some point it undergoes aesthetic and/or functional modifications.
